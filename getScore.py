@@ -17,8 +17,9 @@ def getScore(link):
     video_comm = pd.read_csv(vidName)
     video_comm = video_comm.drop(columns=['Unnamed: 0', 'Unnamed: 0.1'])
     video_comm.rename(columns={'0': 'comment', '1': 'likes'}, inplace=True)
-    print(video_comm['likes'])
-    num_likes = video_comm['likes'].sum()
+    print('likes:')
+    print(video_comm.get('likes'))
+    num_likes = video_comm.get('likes').sum()
     num_comments = video_comm['comment'].count()
     video_comm['likes'] = video_comm['likes'] + 1
     for index, comm in video_comm.iterrows():
@@ -31,8 +32,8 @@ def getScore(link):
     return score/num_likes
 
 #Add links here
-print(getScore('https://www.youtube.com/watch?v=ZUkli9zgP_I'))
-# print(getScore('https://www.youtube.com/watch?v=fP17mIEv8lo'))
-# print(getScore('https://www.youtube.com/watch?v=QD0IM5tfnVQ'))
-# print(getScore('https://www.youtube.com/watch?v=rmQMKowvYeo'))
-# print(getScore('https://www.youtube.com/watch?v=3ScAXwImyw0'))
+#print(getScore('https://www.youtube.com/watch?v=-niuhBmUPLU'))
+#print(getScore('https://www.youtube.com/watch?v=fP17mIEv8lo'))
+#print(getScore('https://www.youtube.com/watch?v=QD0IM5tfnVQ'))
+#print(getScore('https://www.youtube.com/watch?v=rmQMKowvYeo'))
+print(getScore('https://www.youtube.com/watch?v=QPkXJvULrN8'))

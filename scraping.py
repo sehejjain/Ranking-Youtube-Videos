@@ -72,8 +72,8 @@ def scrape(link):
 #    print(comments)
     import pandas as pd
     df = pd.DataFrame(comments)
-    df.to_csv('csvs/' + title + 'comm.csv')
+    df.to_csv('csvs ' + title + 'comm.csv')
     #return file name
-    return 'csvs/' + title + 'comm.csv'
+    return 'csvs ' + title + 'comm.csv'
     driver.close()
 

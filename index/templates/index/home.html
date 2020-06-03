@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Rank Youtube Videos
+        </title>
+    </head>
+
+    <body>
+        <form action="" method="POST">
+            {% csrf_token %}
+           Link1: <input type="text" name="link1">
+           Link2: <input type="text" name="link2">
+           Link3: <input type="text" name="link3">
+           <input type="submit" value="rank">
+        </form>
+        {% for key,value in data %}
+            {{ key }}, {{ value }}<br>
+        {% endfor %}
+    </body>
+</html>
