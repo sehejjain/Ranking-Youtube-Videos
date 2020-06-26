@@ -4,6 +4,11 @@ from scraping import scrape
 
 # Create your views here.
 def home(request):
+        return render(request , 'index/home.html')
+    
+
+
+def ranked(request):
     if request.method == 'POST':
         linkr1 = request.POST.get('link1' ,False)
         linkr2 = request.POST.get('link2' ,False)
@@ -22,4 +27,7 @@ def home(request):
         
     else :
         return render(request , 'index/home.html')
-    return render(request , 'index/home.html' ,{'data' : sorted(context.items())})
+    return render(request , 'index/ranked.html' ,{'data' : sorted(context.items())})
+
+def about(request):
+    return render(request , 'index/about.html')
