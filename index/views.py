@@ -15,12 +15,17 @@ def ranked(request):
         linkr3 = request.POST.get('link3' ,False)
         try:
             link1= getScore(linkr1)
-            link2 = getScore(linkr2)
-            link3 = getScore(linkr3)
         except:
             link1 = 3
-            link2 =1
+        try:
+            link2= getScore(linkr2)
+        except:
+            link2 = 1
+        try:
+            link3= getScore(linkr3)
+        except:
             link3 = 4
+
         print('name:')
         context= {
             link1 : linkr1,
