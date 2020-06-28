@@ -10,8 +10,22 @@
 
 <div class="container">
     {% for key,value in data %}
-    <div class="alert alert-dark" role="alert">
-      <a href={{value}} class="alert-link">{{value}}</a>. Give it a click if you like.
+    
+      <div class="card mb-4 shadow-sm mx-auto" style="width: 40rem;">
+        <div class="card-body">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Score - {{key}}</h4>
+          </div>
+          <br>
+          <br>
+          <ul class="list-unstyled mt-10 mb-1">
+              <div class="form-group">
+                <div class="alert alert-dark" role="alert">
+                  <a href={{value}} class="alert-link">{{value}}</a>. Give it a click if you like.
+                  </div>
+              </div>
+          </ul>
+        </div>
       </div>
 
         <br>

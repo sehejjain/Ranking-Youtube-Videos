@@ -20,7 +20,7 @@ def getScore(link):
     print('likes:')
     print(video_comm.get('likes'))
     num_likes = video_comm.get('likes').sum()
-    num_comments = video_comm['comment'].count()
+    #num_comments = video_comm['comment'].count()
     video_comm['likes'] = video_comm['likes'] + 1
     for index, comm in video_comm.iterrows():
         try:

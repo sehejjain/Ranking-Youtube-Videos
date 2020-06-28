@@ -27,5 +27,80 @@ So to insert you have to press: Ctrl+shift+v",REPLY
 15,"This video was very helpful, thanks!",REPLY
 16,such passionate typing. love it,REPLY
 17,"i am confused, do i need to have a program where i can clone from gethub to local directory? i tried DOS , but it doesn't work. SOrry i am new to this. I am using windows 7.  I want to clone files from github to my computer",REPLY
-18,Sir i have problem on cloning it says  the authenticity of github.com can't be established.what can i do,REPLY
-19,Thanks a lot! So helpful!,REPLY
+18,Thanks a lot! So helpful!,REPLY
+19,You're a star! Thanks for the help!,REPLY
+20,Answered my question within the first 15 seconds. A++,REPLY
+21,this is so useful. Thank you very much,REPLY
+22,"Thank you for all your video, which are really helpful and clear!",REPLY
+23,what is meant by reference to your repo ??,REPLY
+24,Sir i have problem on cloning it says  the authenticity of github.com can't be established.what can i do,REPLY
+25,password from of githubaaccount?,REPLY
+26,"Hi, When I cloned the repo on my local machine (PC), it didn't ask me for my password. Is that normal or am I missing something?",REPLY
+27,"Git clone , command line unknown , what do it do ?",REPLY
+28,thanks from brazil man!,REPLY
+29,And how clone if is username and password?,REPLY
+30,Very very helpful. Thank you!,"1
+REPLY"
+31,What's the difference between cloning a repository and adding a remote repository?,REPLY
+32,"how did you get your 'test-repo' directory, i dont have one.",REPLY
+33,Thanks a lot! Very useful lessons!,REPLY
+34,"Great, so what do you do if the HTTPS clone URL box does not exist?",REPLY
+35,is it necessary to have git bash?? or can i work with the system terminal?,REPLY
+36,"I have a problem: 
+
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.",REPLY
+37,"hi,
+if any changes are made in repository on github by someone, does it get auto sync on our pc after apt update?",REPLY
+38,you type very aggressively. hehe,"2
+REPLY"
+39,You are very helpful. Thank you.,REPLY
+40,What should we do if we want only a single file from the repository and not the whole project. Thanks!,REPLY
+41,Still very useful!,REPLY
+42,"When i use the git clone command it comes up with the following error.
+Warning: permanently added the RSA host key for IP address....... to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.",REPLY
+43,"Thank you. Not only are your videos concise, but they're clear.","1
+REPLY"
+44,How did you configure Git Bash so that it would require you to enter a password upon cloning?,REPLY
+45,Very helpful!! Thanks you,"1
+REPLY"
+46,"hey,
+when i try to clone a repo from git hub in git bash.. 
+i typed the git clone ""url""
+but it doesnt ask me for the username and pswd. ",REPLY
+47,"thanks for the video. silly question: 2:12, what password? and when did you set it up? what does it work for? ( i couldn't find it in your previous video) Thanks a lot!",REPLY
+48,Quick question. In other words this is essentially allowing you to use the code from a repo for use on your computer to edit or whatever you plan to do?,REPLY
+49,"Please help I can't acces github website at all. It says ""secure connection failed"", (Error code: ssl_error_no_cypher_overlap).",REPLY
+50,"Hi, what is the differece between using composer and github",REPLY
+51,fatal: pathspec 'origin' did not match any files,REPLY
+52,"I am completely new to MAC and have no clue how to operate it. Could you please tell me how you open gitbash, none of the videos I have found so far have led me it",REPLY
+53,"Note that in the most recent version of GitHub, in order to copy the Repo URL, you must select 'Clone or Download' and then select 'Use HTTPS' in the upper-right-hand corner of the module to get the URL (if you want to use HTTPS).","1
+REPLY"
+54,why do you use windows lol,REPLY
+55,Thanks!,REPLY
+56,Hi there..am not able to clone my Github repo into my computer. It's stuck at 'Cloning into ...' and hangs till I try to close the Gitbash window. Not sure what's happening!,REPLY
+57,You can teach anything to anyone,REPLY
+58,What is the difference between cloning using HTML and SHH?,"1
+REPLY"
+59,Thanks,REPLY
+60,"How can I calculate the total number of lines of code in a repository? git ls-files | xargs wc -l:  this code gives me the total of lines code in each file, and would like to have the total of the whole repository. Thanks",REPLY
+61,what is thet u opened and said lets open up get bash?????? help please,REPLY
+62,"Hey, how do you get the black window of Git Bash? After downloading Git, I only have a white window ""Get started by adding a repository"" and that's all.
+If I go in the Options, I can change the ""Default shell"" Cmd by Git Bash, but when I close the program and open it again, I still have this white window.",REPLY
+63,"Hi , Just wondering if anybody had this issue. I am using windows 7
+When I installed Git . The default home directory for git was under my c:User\username\ . I am not sure if this directory was always the master previously. I must have done the git init at some point. meaning git hub is watching my all my documents in my directory. Now I dont want to push all my directory files up to the repo. Is there a way to change this? Or does it only push the data from the current folder",REPLY
+64,"Not the main point, I know, but that trick of using Insert is very useful for Git-Bash on Windows, thanks!",REPLY
+65,"question, is it possible to change the location to where the cloned  filed file is stored? When I'm getting ready to clone a file it states it will be saved to the an admin folder. I want to change it to save to my desktop. I hope that makes sense. thanks",REPLY
+66,"sorry, mate, i'm 100% newbie in this, and when i type ""ls"" in my CMD it tells me that ""ls"" is not recognized as an internal command. I have to use ""dir"" instead, why is that? Also, my prompt doesn't indicate you master or branch. Thanks in advance.",REPLY
+67,"for me it says: fatal: unable to access 'https://github.com/aerospike/aerospike-server.git/': Failed connect to github.com:443; No error
+What could be the problem. Please help me.
+Also by running command netsh winhttp show proxy it shows I have direct access and no proxy server",REPLY
+68,CTRL-V doesn't work as CTRL is used in bash and i presume in gitbash for other things (it would be the command ^V and would even print that if nothing is bound to it). You can however you can use CTRL-SHIFT-V (the SHIFT key also helps you do things like copy rather than CTRL-C which is stop...),REPLY
+69,Don't forget to git init if you need to add an origin.,REPLY
+70,"Not sure if this is the appropriate channel or place for this question, however, I am trying to find out how to extract or export a new project board from GitHub to an excel spreadsheet.  Is this even possible and if so how?",REPLY
+71,"I can not proceed with the next step I messed up somewhere and I am stuck in cloning the repository i made ""datasciencecoursera""
+Error reads: 
+Fatal: destination path 'datasciencecoursera' already exist and is not an empty directory.
+How can I empty a directory?",REPLY
