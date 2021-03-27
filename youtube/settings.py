@@ -25,7 +25,10 @@ SECRET_KEY = '&4iw&ivj5x#gdb(g!=!22u2$1)yl*9r)4f)dwzsm1m9^phkej+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'yourank-youtube.herokuapp.com', 
+    '127.0.0.1',
+]
 
 
 # Application definition
