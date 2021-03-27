@@ -21,5 +21,8 @@ urlpatterns = [
     path('ranked' , views.ranked),
     path('about' , views.about , name='about'),
     path('error' , views.error, name='error')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0309fb5ebcdd3ff48ad55e3b459736c8604ba00b
 ]

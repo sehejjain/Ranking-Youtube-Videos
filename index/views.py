@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from getScores import getScore
 from scraping import scrape
+from django.shortcuts import redirect
 
 # Create your views here.
 def home(request):
@@ -42,4 +43,9 @@ def about(request):
     return render(request , 'index/about.html')
 
 def error(request):
+<<<<<<< HEAD
     return render(request , 'index/error.html')
+=======
+    return render(request , 'index/error.html') 
+
+>>>>>>> 0309fb5ebcdd3ff48ad55e3b459736c8604ba00b
