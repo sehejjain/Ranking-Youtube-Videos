@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from getScores import getScore
 from scraping import scrape
+from django.shortcuts import redirect
 
 # Create your views here.
 def home(request):
@@ -16,26 +17,30 @@ def ranked(request):
         try:
             link1= getScore(linkr1)
         except:
-            link1 = 3
+            return redirect('/error')
         try:
             link2= getScore(linkr2)
         except:
-            link2 = 1
+            return redirect('/error')
         try:
             link3= getScore(linkr3)
         except:
-            link3 = 4
+            return redirect('/error')
 
         print('name:')
         context= {
-            link1 : linkr1,
-            link2 : linkr2,
-            link3 : linkr3,
+            round(link1,3) : linkr1,
+            round(link2,3) : linkr2,
+            round(link3,3) : linkr3,
         }
         
     else :
         return render(request , 'index/home.html')
-    return render(request , 'index/ranked.html' ,{'data' : sorted(context.items())})
+    return render(request , 'index/ranked.html' ,{'data' : reversed(sorted(context.items()))})
 
 def about(request):
     return render(request , 'index/about.html')
+
+def error(request):
+    return render(request , 'index/error.html') 
+
