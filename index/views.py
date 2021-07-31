@@ -43,9 +43,6 @@ def about(request):
     return render(request , 'index/about.html')
 
 def error(request):
-<<<<<<< HEAD
-    return render(request , 'index/error.html')
-=======
-    return render(request , 'index/error.html') 
 
->>>>>>> 0309fb5ebcdd3ff48ad55e3b459736c8604ba00b
+    return render(request , 'index/error.html')
+
