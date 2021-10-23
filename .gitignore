@@ -383,3 +383,7 @@ Thumbs.db #thumbnail cache on Windows
 # IPython
 profile_default/
 ipython_config.py
+
+
+FinalDataset.csv
+env

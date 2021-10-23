@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from getScores import getScore
 from scraping import scrape
 from django.shortcuts import redirect
@@ -42,5 +43,6 @@ def about(request):
     return render(request , 'index/about.html')
 
 def error(request):
-    return render(request , 'index/error.html') 
+
+    return render(request , 'index/error.html')
 

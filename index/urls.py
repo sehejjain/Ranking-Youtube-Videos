@@ -21,4 +21,5 @@ urlpatterns = [
     path('ranked' , views.ranked),
     path('about' , views.about , name='about'),
     path('error' , views.error, name='error')
+
 ]

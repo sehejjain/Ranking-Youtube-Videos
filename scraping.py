@@ -1,17 +1,18 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-
 import time
 import re
+from googletrans import Translator
 
 
-def isEnglish(s):
-    try:
-        s.encode('ascii')
-    except UnicodeEncodeError:
-        return False
-    else:
-        return True
+
+# def isEnglish(s):
+#     try:
+#         s.encode('ascii')
+#     except UnicodeEncodeError:
+#         return False
+#     else:
+#         return True
 
 
 def scrape(link):
@@ -56,6 +57,7 @@ def scrape(link):
     comment_like_elems = driver.find_elements_by_class_name('style-scope ytd-comment-action-buttons-renderer')
     num_of_names = len(name_elems)
     comments = []
+    detector = Translator()
     for i in range(num_of_names):
         username = name_elems[i].text  # .replace(",", "|")
         # username = emoji_pattern.sub(r'', username)
@@ -63,11 +65,14 @@ def scrape(link):
         comment = comment_elems[i].text
         comment_likes = comment_like_elems[i].text
         # .replace(",", "|")
-        # comment = emoji_pattern.sub(r'', comment)
-        # comment = str(comment).replace("\n", "---")
-        comments.append([comment, comment_likes])
-        # if isEnglish(comment) == False:
-        #   comment = "NOT ENGLISH"
+        comment = emoji_pattern.sub(r'', comment)
+       
+        # Detect Language for the Comment
+        dec_lan = detector.detect(comment)
+        if dec_lan.lang == "en" and dec_lan.confidence == 1:
+           comments.append([comment, comment_likes])
+        else:
+            continue
 
 #    print(comments)
     import pandas as pd
